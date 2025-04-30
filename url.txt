@@ -1,0 +1,6 @@
+URL Dataset     : https://www.kaggle.com/datasets/utkarshsaxenadn/car-vs-bike-classification-dataset
+
+URL Deployment  : https://huggingface.co/spaces/shakurhs/Computer_Vision_BikeorCar
+
+URL Model       : Best Model https://huggingface.co/spaces/shakurhs/Computer_Vision_BikeorCar/blob/main/model1_checkpoint.keras
+                  GDrive Folder https://drive.google.com/drive/folders/1cD5YXnsDM5h51ZcXKgItThOTkNpLklv8?usp=drive_link
