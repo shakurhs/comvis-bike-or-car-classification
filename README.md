@@ -2,28 +2,28 @@
 
 ## Repository Outline
 
-Penjelasan Mengenai Isi dari Tiap File dan Folder:
+Explanation about the content of each file and folder:
 
-1. model_building.ipynb - Notebook yang berisi pengolahan data dengan python dimulai dari loading dataset, proses EDA, data augmentation, model training, evaluasi model.
-2. model_inf.ipynb - Notebook Data Inference yang berisi kegiatan mulai dari loading model hingga melakukan klasifikasi
-3. url.txt - File yang berisikan url Dataset, url Deployment, dan best model. 
-4. Deployment - Folder yang berisikan file terkait untuk melakukan deployment ke HuggingFace.
+1. model_building.ipynb - Notebook containing data processing with Python, starting from loading dataset, EDA process, data augmentation, model training, and model evaluation.
+2. model_inf.ipynb - Data Inference notebook containing activities from loading the model to performing classification.
+3. url.txt - File containing the Dataset URL, Deployment URL, and the best model link.
+4. Deployment - Folder containing related files to perform deployment to HuggingFace.
 
 ## Problem Background
 
-Model Deep Learning berupa Computer Vision yang saya kembangkan memiliki kemampuan untuk melakukan deteksi dan klasifikasi tterhadap objek berupa `Bike` atau `Car`. Pada dasarnya model ini dibuat bertujuan untuk diaplikasikan pada lapangan atau gedung parkir. Dikarenakan fungsi dari model ini adalah untuk melakukan klasifikasi, sehingga bisa dilakukan perhitungan terhadap jumlah pengguna lahan parkir berdasarkan kendaraan yang digunakan dengan maksud untuk menentukan berapa jumlah kapasitas parkir motor dan mobil yang optimal. Selain itu, jika dilakukan perkembangan lebih lanjut model ini juga dapat melakukan otomatisasi dalam menentukan harga parkir berdasarkan jenis kendaraan.
+The Deep Learning model (Computer Vision) that I developed has the ability to detect and classify objects as either a `Bike` or a `Car`. Basically, this model is made to be applied in parking lots or building garages. Since the function of this model is classification, it can be used to count the number of parking users based on their vehicle type. This helps to determine the optimal parking capacity for motorcycles and cars. Furthermore, if developed further, this model can also automate parking fees based on the vehicle type.
 
 ## Project Output
 
-Output yang dihasilkan berupa model Computer Vision yang dapat melakukan klasifikasi terhadap Motor dan Mobil.
+The output of this project is a Computer Vision model that can classify Motorcycles and Cars.
 
 ## Data
 
-Dataset yang digunakan berupa kumpulan gambar, terdiri atas 2000 gambar motor dan 2000 gambar mobil. Gambar-gambar tersebut memiliki ukuran yang berbeda-beda sehingga dilakukan feature engineering menggunakan ImageDataGenerator.
+The dataset used is a collection of images, consisting of 2,000 images of bikes and 2,000 images of cars. These images have different sizes, so I performed feature engineering using `ImageDataGenerator`.
 
 ## Method
 
-Project ini adalah sebuah project Deep Learning untuk menentukan sebuah gambar apakah termasuk kedalam kelas `Bike` atau `Car`. Setelah melakukan upload dataset, kemudian dilakukan eksplorasi pada data tersebut. Proses selanjutnya adalah feature engineering berupa penyeragaman ukuran gambar, data augmentation, dan lainnya. Setelah itu, dengan menggunakan tensorflow, dilaksanakan model training serta model improvement. Namun terdapat kegagalan pada saat improvement sehingga model yang digunakan untuk data inference adalah base model.
+In this project, I initially tried to perform model improvement by adding more layers and adjusting the parameters to get better accuracy. However, I found that the base model actually performed more consistently during testing. The improvement attempt resulted in a "failure" (likely due to overfitting or unstable loss), which is why I chose to use the base model for the final deployment. It provides the most reliable classification for detecting bikes and cars in different lighting and angles.
 
 ## Stacks
 
